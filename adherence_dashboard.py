@@ -62,7 +62,7 @@ st.markdown("""
 def load_data():
     try:
         # Replace with your actual file path
-        df = pd.read_csv('steamlit_dashboard\QS_Q1_Outcomes_3_10_25.csv')
+        df = pd.read_csv('./QS_Q1_Outcomes_3_10_25.csv')
         
         # Convert Last Activity Date to datetime and handle errors
         df["Last Activity Date"] = pd.to_datetime(df["Last Activity Date"], errors='coerce')
